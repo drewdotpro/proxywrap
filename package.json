@@ -1,5 +1,5 @@
 {
-  "name": "findhit-proxywrap",
+  "name": "hcevan-proxywrap",
   "version": "0.3.11",
   "description": "Wraps node's Server interfaces to be compatible with the PROXY protocol",
   "main": "index.js",
@@ -29,10 +29,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/findhit/proxywrap"
+    "url": "https://github.com/hcevan/proxywrap"
   },
   "dependencies": {
-    "findhit-util": "^0.2.3"
+    "lodash": "^4.13.1"
   },
   "devDependencies": {
     "bluebird": "^2.5.3",
@@ -47,6 +47,6 @@
     "elb"
   ],
   "bugs": {
-    "url": "https://github.com/findhit/proxywrap/issues"
+    "url": "https://github.com/hcevan/proxywrap/issues"
   }
 }

@@ -1,6 +1,6 @@
 var ProxyWrap = require( '../index' )
 var Promise = require( 'bluebird' )
-var Util = require( 'findhit-util' )
+var _ = require( 'lodash' );
 
 var protocols = {
 		net: require( 'net' ),
@@ -56,7 +56,7 @@ module.exports = {
 			pc = server._protocolConstructor
 
 		// Prepare options
-		options = Util.extend( {}, module.defaults.fakeConnect, Util.is.Object( options ) && options || {} )
+		options = _.merge({}, module.defaults.fakeConnect, _.isObject(options) && options || {});
 
 		// Build header
 		header =
