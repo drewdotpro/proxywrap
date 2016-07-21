@@ -23,7 +23,7 @@
     "node": ">= 0.8"
   },
   "scripts": {
-    "test": "jshint . && mocha --globals setImmediate,clearImmediate --check-leaks --colors -t 3000 --reporter spec $(find test/* -name '*.test.js')",
+    "test": "jshint . && mocha --globals setImmediate,clearImmediate --check-leaks --colors -t 3000 --reporter spec --recursive ./test/tests",
     "preversion": "npm test",
     "postversion": "git push origin master && git push origin --tags && npm publish"
   },
