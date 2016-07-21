@@ -1,6 +1,6 @@
 {
   "name": "drewdotpro-proxywrap",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Wraps node's Server interfaces to be compatible with the PROXY protocol",
   "main": "index.js",
   "author": "Drew Llewellyn",
