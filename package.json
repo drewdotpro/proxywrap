@@ -1,9 +1,9 @@
 {
-  "name": "hcevan-proxywrap",
-  "version": "0.3.11",
+  "name": "drewdotpro-proxywrap",
+  "version": "0.1.0",
   "description": "Wraps node's Server interfaces to be compatible with the PROXY protocol",
   "main": "index.js",
-  "author": "Josh Dague",
+  "author": "Drew Llewellyn",
   "license": "BSD",
   "contributors": [
     {
@@ -29,7 +29,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/hcevan/proxywrap"
+    "url": "https://github.com/drewdotpro/proxywrap"
   },
   "dependencies": {
     "lodash": "^4.13.1"
@@ -40,13 +40,14 @@
     "jshint": "^2.9.1",
     "mocha": "^2.1.0",
     "sinon": "^1.12.2",
-    "spdy": "^1.31.0"
+    "spdy": "^1.31.0",
+    "winston": "^2.2.0"
   },
   "keywords": [
     "proxy",
     "elb"
   ],
   "bugs": {
-    "url": "https://github.com/hcevan/proxywrap/issues"
+    "url": "https://github.com/drewdotpro/proxywrap/issues"
   }
 }

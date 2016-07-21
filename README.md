@@ -1,4 +1,4 @@
-# Proxywrap [![Build Status](https://travis-ci.org/findhit/proxywrap.svg?branch=master)](https://travis-ci.org/findhit/proxywrap)
+# Proxywrap [![Build Status](https://travis-ci.org/drewdotpro/proxywrap.svg?branch=master)](https://travis-ci.org/drewdotpro/proxywrap)
 
 ## History
 
@@ -21,7 +21,7 @@ This module is only compatible with **LTS** and **latest stable** versions of [n
 ## Installing
 
 ```bash
-npm install --save findhit-proxywrap
+npm install --save drewdotpro-proxywrap
 ```
 
 ## Usage
@@ -30,7 +30,7 @@ npm install --save findhit-proxywrap
 
 ```js
 var http = require( 'http' )
-var proxiedHttp = require( 'findhit-proxywrap' ).proxy( http )
+var proxiedHttp = require( 'drewdotpro-proxywrap' ).proxy( http )
 var express = require( 'express' )
 var app = express()
 
@@ -73,12 +73,12 @@ Options:
 
 - `ignoreStrictExceptions` (default `false`): `strict` shutdowns your process with an error attached, meaning that if it isn't being caught on socket's `error` event, node will terminate process with an `uncaughtException`. This option tells `strict` methods to destroy sockets without providing the exception, so `node` ignores it. See [#11](https://github.com/findhit/proxywrap/issues/11) for more info.
 
-- `overrideRemote` (default `true`): **findhit-proxywrap** overrides `socket.remoteAddress` and `socket.remotePort` for compability proposes. If you set this as `false`, your `socket.remoteAddress` and `socket.remotePort` will have the Address and Port of your **load-balancer** or whatever you are using behind your app. You can also access client's Address and Port by using `socket.clientAddress` and `socket.clientPort`.
+- `overrideRemote` (default `true`): **drewdotpro-proxywrap** overrides `socket.remoteAddress` and `socket.remotePort` for compability proposes. If you set this as `false`, your `socket.remoteAddress` and `socket.remotePort` will have the Address and Port of your **load-balancer** or whatever you are using behind your app. You can also access client's Address and Port by using `socket.clientAddress` and `socket.clientPort`.
 
 ## Contribute
 
 Do you have any idea to improve this module?
-Feel free to open an [Issue](https://github.com/findhit/proxywrap/issues/new) or a [Pull Request](https://github.com/findhit/proxywrap/pulls).
+Feel free to open an [Issue](https://github.com/drewdotpro/proxywrap/issues/new) or a [Pull Request](https://github.com/drewdotpro/proxywrap/pulls).
 
 ### People who have contributed so far
 

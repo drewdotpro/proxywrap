@@ -103,14 +103,18 @@ function v1tests ( proto, server ) {
 		});
 
 		it( "should drop connection gracefully when non-proxy connection is gathered when `ignoreStrictExceptions` is active. #11", function ( cb ) {
-			var server = tUtil.createServer( proto, { strict: true, ignoreStrictExceptions: true });
+			var fakeWinston = {
+				warn: function(message){
+					expect(message).to.equal("non-PROXY protocol connection - GET / HTTP/1.0 Incorrect Header");
+					cb();
+				}
+			};
+			var server = tUtil.createServer( proto, { logger: fakeWinston, strict: true, ignoreStrictExceptions: true });
 			var client = new net.Socket();
-
-			client.on( 'end', cb );
 
 			client.once( 'connect', function () {
 				// Send header and body
-				client.write( 'GET / HTTP/1.0\n\n' );
+				client.write( 'GET / HTTP/1.0 Incorrect Header' );
 			});
 
 			client.connect( server.port, server.host );

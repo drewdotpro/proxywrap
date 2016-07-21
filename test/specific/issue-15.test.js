@@ -1,4 +1,4 @@
-/* related to issue https://github.com/findhit/proxywrap/issues/15 */
+/* related to issue https://github.com/drewdotpro/proxywrap/issues/15 */
 var http = require( 'http' )
 var assert = require( 'assert' )
 var net = require( 'net' )
