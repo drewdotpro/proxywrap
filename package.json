@@ -45,7 +45,9 @@
   },
   "keywords": [
     "proxy",
-    "elb"
+    "elb",
+    "proxy protocol",
+    "express"
   ],
   "bugs": {
     "url": "https://github.com/drewdotpro/proxywrap/issues"

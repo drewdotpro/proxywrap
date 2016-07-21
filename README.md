@@ -75,6 +75,8 @@ Options:
 
 - `overrideRemote` (default `true`): **drewdotpro-proxywrap** overrides `socket.remoteAddress` and `socket.remotePort` for compability proposes. If you set this as `false`, your `socket.remoteAddress` and `socket.remotePort` will have the Address and Port of your **load-balancer** or whatever you are using behind your app. You can also access client's Address and Port by using `socket.clientAddress` and `socket.clientPort`.
 
+- `logger` (default `undefined`): **drewdotpro-proxywrap** pass in a winston logger instance, currently this library reports `warn` on strict exceptions when `ignoreStrictExceptions` is set to true. Not providing a logger will mean no logs are output.
+
 ## Contribute
 
 Do you have any idea to improve this module?
